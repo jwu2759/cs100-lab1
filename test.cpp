@@ -22,9 +22,9 @@ TEST(EchoTest, Symbols) {
     EXPECT_EQ("!@#$", echo(2,test_val));
 }
 
-TEST(EchoTest, Sentence) {
-    char* test_val[6]; test_val[0] = "./c-echo"; test_val[1] = "Today"; test_val[2] = "is"; test_val[3] = "a"; test_val[4] = "good"; test_val[5] = "day";
-    EXPECT_EQ("Today is a good day", echo(6,test_val));
+TEST(EchoTest, Numbers) {
+    char* test_val[2]; test_val[0] = "./c-echo"; test_val[1] = "1234";
+    EXPECT_EQ("1234", echo(2,test_val));
 }
 
 int main(int argc, char **argv) {
